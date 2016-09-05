@@ -21,6 +21,7 @@ gulp.task('less', function(){
 
 gulp.task('scripts', function() {
 	return gulp.src([
+		'app/libs/jQuery/dist/jquery.min.js'
 	])
 	.pipe(concat('libs.min.js'))
 	.pipe(uglify())
