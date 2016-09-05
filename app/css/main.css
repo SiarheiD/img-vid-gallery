@@ -1,0 +1,136 @@
+html,
+body {
+  height: 100%;
+}
+main {
+  height: 100%;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10px;
+}
+.welcome {
+  height: 100%;
+  background: #f34f30 url(../img/welcome-background.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  text-align: center;
+}
+.welcome__logo {
+  display: block;
+  position: relative;
+  top: 20%;
+  width: 62%;
+  margin: 0 auto;
+}
+.welcome__logo img {
+  width: 100%;
+}
+.welcome__controlls {
+  position: absolute;
+  bottom: 2%;
+  width: 100%;
+  font-size: 4em;
+}
+.welcome__controlls .welcome__controlls__button {
+  display: block;
+  cursor: pointer;
+  margin: 1em auto;
+}
+.welcome__controlls .welcome__controlls__button:not(.welcome__controlls__button--fscr) {
+  width: 10em;
+  border: .2em solid #fff;
+  padding: .5em 0;
+  -webkit-transition: background-color 0.2s, color 0.2s;
+  transition: background-color 0.2s, color 0.2s;
+}
+.welcome__controlls .welcome__controlls__button:not(.welcome__controlls__button--fscr):hover {
+  background-color: #fff;
+  color: #f34f30;
+}
+.welcome__controlls .welcome__controlls__button--fscr {
+  width: 10%;
+  margin-top: 3em;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+.welcome__controlls .welcome__controlls__button--fscr img {
+  width: 100%;
+  height: auto;
+}
+.welcome__controlls .welcome__controlls__button--fscr:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.slider {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: #aaa;
+}
+.slider__item {
+  position: absolute;
+  height: 100%;
+  display: none;
+}
+.slider__item img {
+  height: 100%;
+  width: 100%;
+}
+.slider__item.active {
+  display: block;
+}
+.slider__dots {
+  position: absolute;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  opacity: .8;
+  z-index: 1000;
+}
+.slider__dots .dots-wrapper {
+  position: relative;
+  float: left;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.slider__dots:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.slider__dots span {
+  font-size: 10px;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 1.6em;
+  margin: 0 .6em;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+  -webkit-transition: background-color 0.2s, -webkit-transform 0.1s;
+  transition: background-color 0.2s, -webkit-transform 0.1s;
+  transition: transform 0.1s, background-color 0.2s;
+  transition: transform 0.1s, background-color 0.2s, -webkit-transform 0.1s;
+}
+.slider__dots span:before {
+  content: '';
+  display: block;
+  padding-top: 100%;
+}
+.slider__dots span:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.slider__dots span.active {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+  background-color: #f34f30;
+}
