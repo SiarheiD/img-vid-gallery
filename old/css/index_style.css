@@ -1,0 +1,59 @@
+body {
+    margin: 0px;
+    font-family: 'Arial';
+}
+
+html {
+    background-image: url(../images/BG.jpg);
+    background-size: cover;  
+}
+
+
+:-webkit-full-screen  {
+    background-image: url(../images/BG.jpg);
+    background-size: cover;
+}
+
+:-webkit-full-screen  .button{
+    font-size: 40pt;
+    margin: 25px auto;
+}
+
+.fullscreen {
+    margin-top: 20%;
+    text-align: center;
+}
+
+.fullscreen img {
+    width: 10%;
+}
+
+.buttons {
+    margin-top: 75%;
+}
+
+.button {
+    padding: 10px;
+    height: auto;
+    width: 50%;
+    text-align: center;
+    margin: 40px auto;
+    font-size: 50pt;
+    border-color: white;
+    border-style: solid;
+    border-radius: 50px;
+}
+
+.logo {
+    text-align: center;
+    margin-top: 25%;  
+}
+
+.logo img {
+    width: 75%;
+}
+
+a {
+    text-decoration: none;
+    color : white;
+}

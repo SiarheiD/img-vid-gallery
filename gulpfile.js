@@ -84,4 +84,7 @@ gulp.task('build', ['clean', 'less', 'scripts', 'img'], function() {
 
 	var buildHtml = gulp.src('app/*.html')
 		.pipe(gulp.dest('dist'));
+
+	var buildPHP = gulp.src('app/php/*.php')
+		.pipe(gulp.dest('dist/php'))
 });
